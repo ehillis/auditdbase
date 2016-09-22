@@ -1,0 +1,64 @@
+<ion-navbar *navbar>
+  <ion-title>User Login</ion-title>
+</ion-navbar>
+
+    <ion-content padding="true" class="has-header">
+      <form #loginCreds="ngForm" (ngSubmit)="onSubmit(loginCreds.value)">
+      <ion-item>
+	<ion-label>Username</ion-label>
+	<ion-input [(ngModel)]="email" type="email" placeholder="email@address" (change)="onChangeEmail(email)">
+	</ion-input>
+	<!--
+	<ion-input [(ngControl)]="email" type="text" placeholder="email@address">
+	</ion-input>
+	-->
+      </ion-item>
+
+      <!--
+      <div *ngIf="showpwchecked==true">
+	<ion-item>
+	  
+	<ion-label fixed>Password:</ion-label>
+	<!--
+	<ion-input [(ngModel)]="password" type="text" (change)="onChangePassword(password)" required>
+	  -->
+<!--
+	<ion-input ngControl="password" type="text" required>
+	</ion-input>
+	</ion-item>
+      </div>
+      -->
+      <div *ngIf="showpw==true">
+	<ion-item>
+	  
+	<ion-label>Password:</ion-label>
+	<ion-input ngControl="password" type="password">
+	</ion-input>
+	</ion-item>
+      <!--
+      <ion-checkbox ng-model="showpwchecked" (click)="onChange()"></ion-checkbox>&nbsp;Show Password
+      -->
+	<h4>
+	  <p></p>
+	  NOTE: Create a PIN to use each time this login page comes up between voters.
+	</h4>
+      </div>
+      <div>
+      <ion-item>
+	<ion-label>PIN</ion-label>
+	<!--
+	    <ion-input [(ngModel)]="pin" type="text" (change)="onChangePin(pin)" required>
+	      -->
+	<ion-input ngControl="pin" type="password" required>
+	</ion-input>
+      </ion-item>
+</div>
+      </form>
+    <div padding>
+      <button type="submit" (click)="onSubmit(loginCreds.value)" >Login</button>
+    </div>
+    <div padding>
+      <p *ngIf="error" class="error">{{ error }}</p>  
+    </div>
+
+    </ion-content>

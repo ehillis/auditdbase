@@ -1,0 +1,30 @@
+<ion-navbar *navbar >
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>
+    {{party}} Presidential Candidates
+  </ion-title>
+
+</ion-navbar>
+
+<ion-content>
+
+    <div padding>
+      <button primary block (click)="onVote()">Cast Vote</button>
+    </div>
+
+  <form (submit)="onVote()" [ngFormModel]="president">
+    <ion-list radio-group ngControl="cands">
+
+      <ion-list-header>
+	{{party}} Presidential Candidates
+      </ion-list-header>
+
+      <ion-item *ngFor="let cand of candidates">
+	<ion-label>{{cand.label}}</ion-label>
+	<ion-radio value="{{cand.val}}" (click)="onCandChange(cand)"></ion-radio>
+      </ion-item>
+    </ion-list>
+  </form>
+</ion-content>

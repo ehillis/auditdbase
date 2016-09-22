@@ -1,0 +1,81 @@
+<ion-navbar *navbar>
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>Sign-In</ion-title>
+</ion-navbar>
+
+    <ion-content padding="true" class="has-header">
+      <ion-list>
+	<!--
+	<div padding>
+	  <button (click)="scanBarcode()">Scan Key</button>
+	</div>
+	-->
+        <form id="signIn-form2" (submit)="onSubmit()" class="list">
+      <ion-item>
+	<ion-label fixed>Key</ion-label>
+	<ion-input [(ngModel)]="cryptokey" type="text" placeholder="0123-4567-89AB-CDEF" (change)="onKeyChange(cryptokey)">
+	</ion-input>
+      </ion-item>
+
+      <div *ngIf="whichState=='CA'">
+	<ion-item>
+	  <ion-label>Party</ion-label>
+	  <ion-select [(ngModel)]="party" #item (change)="onChange(party)">
+	    <ion-option value="democrat">Democrat</ion-option>
+	    <ion-option value="republican">Republican</ion-option>
+	    <ion-option value="npp">No Party Preference</ion-option>
+	    <ion-option value="green">Green</ion-option>
+	    <ion-option value="libertarian">Libertarian</ion-option>
+	    <ion-option value="peacefree">Peace and Freedom</ion-option>
+	    <ion-option value="amind">American Independent</ion-option>
+	    <ion-option value="prov">Provisional Ballot</ion-option>
+	  </ion-select>
+	</ion-item>
+	<div *ngIf="nppSelected==2">
+	  <ion-item>
+	    <ion-label>Voting As:</ion-label>
+	    <ion-select [(ngModel)]="nppparty" (change)="onNppChange(nppparty)">
+	      <ion-option value="democrat">Democrat</ion-option>
+	      <ion-option value="republican">Republican</ion-option>
+	      <ion-option value="green">Green</ion-option>
+	      <ion-option value="libertarian">Libertarian</ion-option>
+	      <ion-option value="peacefree">Peace and Freedom</ion-option>
+	      <ion-option value="amind">American Independent</ion-option>
+	    </ion-select>
+	  </ion-item>
+	</div>
+	<div *ngIf="nppSelected==1">
+	  <ion-item>
+	    <ion-label>Voting As:</ion-label>
+	    <ion-select [(ngModel)]="nppparty" (change)="onNppChange(nppparty)">
+	      <ion-option value="democrat">Democrat</ion-option>
+	      <ion-option value="amind">American Independent</ion-option>
+	      <ion-option value="libertarian">Libertarian</ion-option>
+	    </ion-select>
+	  </ion-item>
+	</div>
+      </div>
+      <div *ngIf="whichState=='DC'">
+	<ion-list radio-group ngControl="ballot">
+	  <ion-list-header>
+	    Ballot Type
+	  </ion-list-header>
+	  <ion-item>
+	    <ion-label>Democrat Ballot</ion-label>
+	    <ion-radio value="democrat" (click)="onBChange(ballot)"></ion-radio>
+	  </ion-item>
+	  <ion-item>
+	    <ion-label>Provisional Ballot</ion-label>
+	    <ion-radio value="prov" (click)="onBChange(ballot)"></ion-radio>
+	  </ion-item>
+	</ion-list>
+      </div>
+        </form>
+      </ion-list>
+    <div padding>
+      <button primary block (click)="onSignIn()">Sign In</button>
+    </div>
+
+    </ion-content>

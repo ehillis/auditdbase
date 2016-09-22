@@ -1,0 +1,84 @@
+President:
+
+Democratic	HILLARY CLINTON
+Democratic	ROQUE DE LA FUENTE
+Democratic	HENRY HEWES
+Democratic	KEITH JUDD
+Democratic	BERNIE SANDERS
+Democratic	MICHAEL STEINBERG
+Democratic	WILLIE WILSON
+Republican	BEN CARSON
+Republican	TED CRUZ
+Republican	JIM GILMORE
+Republican	JOHN R. KASICH
+Republican	DONALD TRUMP
+American Independent   WILEY DRAKE
+American Independent   ARTHUR HARRIS
+American Independent   JAMES HEDGES
+American Independent   THOMAS HOEFLING
+American Independent   J.R. MYERS
+American Independent   ROBERT ORNELAS
+American Independent   ALAN SPEARS
+Green	   DARRYL CHERNEY
+Green	   WILLIAM KREML
+Green	   KENT MESPLAY
+Green	   SEDINAM MOYOWASIFSA
+Green	   JILL STEIN
+Libertarian   MARC FELDMAN
+Libertarian   JOHN HALE
+Libertarian   CECIL INCE
+Libertarian   GARY JOHNSON
+Libertarian   STEVE KERBEL
+Libertarian   JOHN MCAFEE
+Libertarian   DARRYL W. PERRY
+Libertarian   AUSTIN PETERSEN
+Libertarian   DERRICK M. REID
+Libertarian   JACK ROBINSON, JR.
+Libertarian   RHETT WHITE FEATHER SMITH
+Libertarian   JOY WAYMIRE
+Peace and Freedom      LYNN S. KAHN
+Peace and Freedom      GLORIA ESTELA LA RIVA
+Peace and Freedom      MONICA MOOREHEAD
+
+Senate Candidates:
+
+Democratic	Akinyemi Olabode Agbede
+Democratic	Emory Peretz Rodgers
+Democratic	Herbert G. Peters
+Democratic	Kamala D. Harris
+Democratic	Loretta L. Sanchez
+Democratic	Massie Munroe
+Democratic	President Cristina Grappo
+Democratic	Steve Stokes
+
+Green		      Pamela Elizondo
+
+Libertarian	      Gail K. Lightfoot
+Libertarian	      Mark Matthew Herd
+
+No Party Preference   Clive Grey
+No Party Preference   Don J. Grundmann
+No Party Preference   Eleanor García
+No Party Preference   Gar Myers
+No Party Preference   Jason Hanania
+No Party Preference   Jason Kraus
+No Party Preference   Ling Ling Shi
+No Party Preference   Mike Beitiks
+No Party Preference   Paul Merritt
+No Party Preference   Scott A. Vineberg
+No Party Preference   Tim Gildersleeve
+
+Peace and Freedom     John Thompson Parker
+
+Republican	      Don Krampe
+Republican	      Duf Sundheim
+Republican	      George C. Yang
+Republican	      Greg Conlon
+Republican	      Jarrell Williamson
+Republican	      Jerry J. Laws
+Republican	      Karen Roseberry
+Republican	      Phil Wyman
+Republican	      Ron Unz
+Republican	      Thomas G. Del Beccaro
+Republican	      Tom Palzer
+Republican	      Von Hougo
